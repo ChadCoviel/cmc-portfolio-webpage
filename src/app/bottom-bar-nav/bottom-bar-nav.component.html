@@ -1,1 +1,16 @@
 <p>bottom-bar-nav works!</p>
+
+<div>
+<ul id="menu">
+	<li id="menu" *ngFor="let link of links">
+		<!-- <div id="menu" *ngFor="let section of sections"> -->
+
+		  <!-- <h3> -->
+		  <a (click)="goToLink(link.value)">{{ link.name }}</a>
+		  <!-- </h3> -->
+		  <!-- (click)="passTheSalt()" -->
+
+		<!-- </div> -->
+	</li>
+</ul>
+<div>

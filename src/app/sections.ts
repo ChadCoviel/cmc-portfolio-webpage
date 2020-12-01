@@ -2,31 +2,31 @@ export const sections = [
   {
     name: 'About Me',
     description: 'About Me',
-    path: 'AboutMe',
+    path: 'aboutme',
     required: true
   },
   {
     name: 'Email',
     description: 'Contact me through email',
-    path: 'EmailMe',
+    path: 'emailme',
     required: true
   },
   {
     name: 'SLogo',
     description: 'An embed java application',
-    path: 'SLogo',
+    path: 'slogo',
     required: false
   },
   {
     name: 'Blog',
     description: 'My blog',
-    path: 'Blog',
+    path: 'blog',
     required: false
   },
   {
     name: 'Resume',
     description: 'My resume',
-    path: 'Resume',
+    path: 'resume',
     required: false
   }
 ];

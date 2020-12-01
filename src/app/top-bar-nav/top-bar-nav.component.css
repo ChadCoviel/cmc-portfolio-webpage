@@ -1,1 +1,12 @@
 background-color:rgb(255, 99, 71);
+
+#menu ul{
+  list-style: none;
+}
+#menu li{
+  display: inline;
+}
+#menu a{
+  display: inline;
+}
+
