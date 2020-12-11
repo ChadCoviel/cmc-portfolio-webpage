@@ -1,16 +1,9 @@
-<p>top-bar-nav works!</p>
-
 <div>
-<ul id="menu">
-	<li id="menu" *ngFor="let section of sections">
-		<!-- <div id="menu" *ngFor="let section of sections"> -->
-
-		  <!-- <h3> -->
-		  <a [routerLink]="section.path">{{ section.name }}</a>
-		  <!-- </h3> -->
-		  <!-- (click)="passTheSalt()" -->
-
-		<!-- </div> -->
-	</li>
-</ul>
+	<div>
+		<ul id="menu">
+			<li id="menu" *ngFor="let section of sections">
+				  <a [routerLink]="section.path">{{ section.name }}</a>
+			</li>
+		</ul>
+	</div>
 </div>

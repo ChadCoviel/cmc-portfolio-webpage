@@ -1,1 +1,26 @@
-background-color:rgb(255, 99, 71);
+#topnav {
+	top: 0;
+	width: 100%;  /*Full width */
+	position: sticky;
+	position: -webkit-sticky;
+	height: 5vh;
+	border: 1px solid red;
+	background-color: lightblue;
+}
+
+#content {
+  	width: 100vw;
+  	height: 90vmin;
+  	/*margin-top: 10vh;*/
+  	overflow-y: scroll;
+  	background-color: green;
+}
+
+#bottomnav {
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0;  /*Position the navbar at the top of the page */
+  width: 100%;  /*Full width */
+  height: 5vh;
+  border: 1px solid red;
+  background-color: orange;
+}
