@@ -1,11 +1,10 @@
-<div id="topnav" class="row-md-1">
-	<app-top-bar-nav></app-top-bar-nav>
-</div>
-<div id="content" class="row-md-10">
+<div id="content">
+	<div id="topnav">
+		<app-top-bar-nav></app-top-bar-nav>
+	</div>
 	<router-outlet></router-outlet>
+	<div id="bottomnav">
+		<app-bottom-bar-nav></app-bottom-bar-nav>
+	</div>
 </div>
 <!-- </div> -->
-
-<div id="bottomnav" class="row-md-1">
-	<app-bottom-bar-nav></app-bottom-bar-nav>
-</div>

@@ -1,5 +1,6 @@
-<div>
-<li *ngFor="let content of about_me_content">
-	  <a pageScroll pageScrollDuration=0 href="#last" [routerLink]="">{{ content.name }}</a>
-</li>
+<div id="side-nav">
+	<li *ngFor="let content of about_me_content">
+		  <a pageScroll pageScrollDuration=0 href="#last" [routerLink]="">{{ content.name }}</a>
+		  <!-- <a (click)="scroll(target)">{{ content.name }}</a> -->
+	</li>
 </div>

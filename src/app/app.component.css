@@ -1,19 +1,27 @@
 #topnav {
 	top: 0;
+	left:0;
 	width: 100%;  /*Full width */
-	position: sticky;
-	position: -webkit-sticky;
+	min-width: 100%;
+	position: fixed;
+	text-align: center;
 	height: 5vh;
+	min-height: 5vh;
 	border: 1px solid red;
 	background-color: lightblue;
+	overflow: hidden;
+	z-index:1;
 }
 
 #content {
   	width: 100vw;
-  	height: 90vmin;
+  	height: 90vh;
+  	top: 5vh;
+  	/*max-height: 90vh;*/
+  	position: relative;
   	/*margin-top: 10vh;*/
-  	overflow-y: scroll;
   	background-color: green;
+  	/*overflow-y: scroll;*/
 }
 
 #bottomnav {
@@ -23,4 +31,5 @@
   height: 5vh;
   border: 1px solid red;
   background-color: orange;
+  text-align: center;
 }
