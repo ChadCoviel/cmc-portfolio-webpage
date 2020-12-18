@@ -1,9 +1,10 @@
-<div>
-	<div>
-		<ul id="menu">
-			<li id="menu" *ngFor="let section of sections">
-				  <a [routerLink]="section.path">{{ section.name }}</a>
-			</li>
-		</ul>
-	</div>
-</div>
+<nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+	<ul id="menu" class="navbar-nav">
+		<li class="nav-item" *ngFor="let section of sections">
+			  <a class="nav-link" [routerLink]="section.path">{{ section.name }}</a>
+		</li>
+	</ul>
+</nav>
+
+<!-- class="navbar navbar-expand-lg navbar-light bg-light" -->
+<!-- style="background-color: #e3f2fd;" -->

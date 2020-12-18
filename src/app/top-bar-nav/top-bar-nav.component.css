@@ -1,12 +1,18 @@
 background-color:rgb(255, 99, 71);
 
-#menu ul{
+ul{
   list-style: none;
+  top: 5vh;
 }
-#menu li{
+li{
   display: inline;
+  /*padding: 2vh;*/
 }
-#menu a{
+a {
+  /*background-color: gray;	*/
+}
+
+/*#menu a{
   display: inline;
-}
+}*/
 
