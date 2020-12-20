@@ -1,7 +1,9 @@
 <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
 	<ul id="menu" class="navbar-nav">
-		<li id="menu" *ngFor="let link of links" class="nav-item">
-			  <img src="{{ link.image }}" alt="" width="32" height="32" title="Bootstrap"><a (click)="goToLink(link.value)" class="nav-link" style="font-size:20px;">{{ link.name }}</a>
+		<li id="menu" *ngFor="let link of links">
+			  <a (click)="goToLink(link.value)">
+			  	<img class="rounded" src="{{ link.image }}" alt="" width="32" height="32" title="Bootstrap">
+			  </a>
 		</li>
 	</ul>
 </nav>

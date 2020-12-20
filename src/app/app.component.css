@@ -1,3 +1,8 @@
+#content {
+  	width: 100vw;
+  	height: 100vh;
+  	position: relative;
+}
 #topnav {
 	top: 0;
 	left:0;
@@ -7,27 +12,21 @@
 	text-align: center;
 	height: 5vh;
 	min-height: 5vh;
-	/*border: 1px solid red;*/
+	/*border: 1px solid red;*/ /* For debugging*/
 	background-color: lightblue;
 	overflow: hidden;
 	z-index:1;
 }
-
-#content {
-  	width: 100vw;
-  	height: 90vh;
-  	top: 5vh;
-  	position: relative;
-  	/*background-color: green;*/
+#middle {
+	top:5vh;
+	position:relative;
 }
-
 #bottomnav {
   position: fixed; /* Set the navbar to fixed position */
-  bottom: 0;  /*Position the navbar at the top of the page */
+  bottom: 0; 
   width: 100%;  /*Full width */
   height: 5vh;
-  /*border: 1px solid red;*/
-  background-color: orange;
+  /*border: 1px solid red;*/ /* For debugging*/
   text-align: center;
   z-index:1;
 }

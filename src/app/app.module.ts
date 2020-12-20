@@ -14,6 +14,7 @@ import { TopBarNavComponent } from './top-bar-nav/top-bar-nav.component';
 import { BottomBarNavComponent } from './bottom-bar-nav/bottom-bar-nav.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     JavaAppComponent,
     TopBarNavComponent,
     BottomBarNavComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ResumeComponent
 
   ],
   imports: [
@@ -34,7 +36,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       { path: '', component: AboutMeComponent },
       { path: 'aboutme', component: AboutMeComponent },
       { path: 'emailme', component: EmailFormComponent },
-      { path: 'resume', component: ContentComponent },
+      { path: 'resume', component: ResumeComponent },
       { path: 'slogo', component: JavaAppComponent },
       { path: 'blog', component: ContentComponent }
     ]),

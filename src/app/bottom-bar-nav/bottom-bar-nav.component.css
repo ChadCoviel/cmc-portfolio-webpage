@@ -3,4 +3,11 @@ ul{
 }
 li{
   display: inline;
+  padding-top: 0;
+}
+a {
+	padding: 3vh;
+}
+img {
+	cursor: pointer;
 }

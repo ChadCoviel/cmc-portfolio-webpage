@@ -1,10 +1,10 @@
-<div id="middlecontent" class="container-fluid">
+<div id="middlecontent" class="container-fluid d-inline-flex">
 	<div class="row">
-       <div class="col-md-2" style="background-color:lightgray;">
+       <div id="side-bar" class="col-md-2 visible-md">
           <app-side-bar-nav></app-side-bar-nav>  
        </div>
-       <div class="col-sm-10" style="background-color:white;overflow-y:visible;">
-          <a>PS Test</a>
+       <div id="about-me-content" class="col-sm-10" data-spy="scroll" data-target="#side-nav">
+          <!-- <a>PS Test</a>
           <p style="color:blue;font-size:60px;">
             <code>THIS IS PLACEHOLDER TEXT</code>
             THIS IS PLACEHOLDER TEXT
@@ -20,44 +20,35 @@
             THIS IS PLACEHOLDER TEXT
             THIS IS PLACEHOLDER TEXT
             THIS IS PLACEHOLDER TEXT
+          </p> -->
+          <div id="edu-content">
+            <h1>Education</h1>
+            <p style="color:black;font-size:24px;">
+            I attended Duke University for my undergraduate degree starting in 2011 and graduated in 2018. I studied Electrical and Computer Engineering and double majored in Computer Science. Duke made it easy to double major in these curriculums however it was still super tough as you can imagine. I took my senior project in software maintainability which emphasized code flexibility in the face of ever changing stakeholder demands and was one of the most valuable classes that I took during my undergraduate career.
           </p>
-          <p id="edu-content" style="color:black;font-size:60px;">
-            SIDE BAR NAVIGATES TO HERE!
-          </p>
-          <p style="color:black;font-size:60px;">
-            SIDE BAR NAVIGATES TO HERE!
-          </p>
-          <p style="color:black;font-size:60px;">
-            SIDE BAR NAVIGATES TO HERE!
-          </p>
-          <p style="color:black;font-size:60px;">
-            SIDE BAR NAVIGATES TO HERE!
-          </p>
-          <p id="tech-content" style="color:black;font-size:60px;">
-            SIDE BAR NAVIGATES TO HERE!
-          </p>
-          <p style="color:black;font-size:60px;">
-            SIDE BAR NAVIGATES TO HERE!
-          </p>
-          <p style="color:black;font-size:60px;">
-            SIDE BAR NAVIGATES TO HERE!
-          </p>
-          <p id="goals-content" style="color:black;font-size:60px;">
-            SIDE BAR NAVIGATES TO HERE!
-          </p>
-          <p style="color:black;font-size:60px;">
-            SIDE BAR NAVIGATES TO HERE!
-          </p>
-          <p style="color:black;font-size:60px;">
-            SIDE BAR NAVIGATES TO HERE!
-          </p>
-          <p style="color:black;font-size:60px;">
-            SIDE BAR NAVIGATES TO HERE!
-          </p>
-          <div>
-            <a id="interests-content" style="color:black;font-size:20px;">
-              SIDE BAR NAVIGATES TO HERE!
-            </a>
+          </div>
+          <div id="tech-content" style="color:black;font-size:60px;">
+            <h1>Languages and Technologies</h1>
+            <div id="cards">
+              <div class="card border-0" style="width: 12rem;" *ngFor="let t of tech">
+                <img class="card-img-top" src="{{ t.image }}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text tech-card-text">{{ t.name }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="why-content">
+            <h1>Why programming?</h1>
+            <p style="color:black;font-size:24px;">
+              When I was in high school I took a computer science AP class. This was my first exposure to coding. The whole class was taught in Java. I remember the first time that I ran some code that produced 'Hello World' in the console below. I was ecstatic. Then we started doing cool stuff like loops and conditionals and solving problems with algorithms. I loved the sense of power I got from writing some code that produced some output in front of me. My imagination opened up and I realized that with this knowledge I could create anything I wanted! Despite my interest, I ended up going to Duke for electrical engineering because I looked up to some of my family members that were engineers and I was always ok at math. Duke makes it really easy to double major electrical engineering with computer science because their electrical engineering major includes computer engineering. I decided to double major and ended up loving the computer science curriculum way more than the electrical engineering curriculum. That's when I decided that I would pursue a career as a software engineer - best of both worlds!
+            </p>
+          </div>
+          <div id="interests-content">
+            <h1>Interests</h1>
+            <p style="color:black;font-size:24px;">
+              I love designing websites and developing solutions to interesting coding challenges. I also enjoy working out at least four days a week and playing volleyball. In high school I played on the varsity volleyball team and I think it is the most fun sport out there. It's a blast and I still play it to this day on teams for local sports clubs. Outside of programming, I enjoy video games of many varieties. My favorite genres are rpgs, jrpgs, action rpgs, first person shooters, third person shooters, and strategic rts. I plan to do a lot of traveling in the future.
+            </p>
           </div>
        </div>
     </div> 

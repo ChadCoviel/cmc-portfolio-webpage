@@ -6,10 +6,10 @@ export const sections = [
     required: true
   },
   {
-    name: 'Email',
-    description: 'Contact me through email',
-    path: 'emailme',
-    required: true
+    name: 'Resume',
+    description: 'My resume',
+    path: 'resume',
+    required: false
   },
   {
     name: 'SLogo',
@@ -18,15 +18,15 @@ export const sections = [
     required: false
   },
   {
+    name: 'Email',
+    description: 'Contact me through email',
+    path: 'emailme',
+    required: true
+  },
+  {
     name: 'Blog',
     description: 'My blog',
     path: 'blog',
-    required: false
-  },
-  {
-    name: 'Resume',
-    description: 'My resume',
-    path: 'resume',
     required: false
   }
 ];

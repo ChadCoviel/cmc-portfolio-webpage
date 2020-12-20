@@ -1,3 +1,50 @@
 p {
-  text-indent: 50px;
+  /*text-indent: 50px;*/
 }
+ul{
+  list-style: none;
+}
+li{
+  display: inline;
+  /*padding-top: 0;*/
+}
+
+h1 {
+	text-align: center;
+}
+/*div {
+	white-space:normal;
+	}*/
+
+#middlecontent {
+	/*display: flex;
+	flex-direction: column;
+	flex-wrap: wrap-reverse;*/
+	/*overflow-y: scroll;*/
+	/*height: 90%;
+	position: absolute;*/
+}
+#side-bar {
+/*	float: left;*/
+	background-color:lightgray;
+}
+
+#about-me-content {
+	background-color:white;
+	overflow-y:visible;
+	position:relative;
+}
+
+#cards {
+	text-align: center;
+}
+
+.card {display:inline-block;}
+
+.tech-card-text {
+	color:black;
+	font-size:25px;
+	text-align:center;
+}
+
+/** { border: 1px solid black; }*/
