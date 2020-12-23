@@ -1,5 +1,5 @@
-<div class="fixed-div">
-	<div id="side-nav" class="navbar navbar-light bg-light container-fluid" *ngFor="let content of about_me_content">
-	  	<a class="nav-link" id="{{ content.id }}-nav" pageScroll pageScrollDuration=300 href="#{{ content.id }}">{{ content.name }}</a>
+<div id="side-bar-div" class="fixed-div" snScrollSpy>
+	<div snScrollSpyItem for="side-bar" id="side-nav" class="flex-column" *ngFor="let content of about_me_content" [ngClass]="{ 'current-section': currentSection === content.id}">
+	  	<a class="nav-link" id="{{ content.id }}-nav" href="#{{ content.id }}">{{ content.name }}</a>
 	</div>
 </div>

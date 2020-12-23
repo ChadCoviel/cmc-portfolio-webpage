@@ -15,6 +15,10 @@ import { BottomBarNavComponent } from './bottom-bar-nav/bottom-bar-nav.component
 import { AboutMeComponent } from './about-me/about-me.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ResumeComponent } from './resume/resume.component';
+import { ScrollSpyDirective } from './scroll-spy.directive';
+import { InViewportModule } from '@thisissoon/angular-inviewport';
+import { ScrollSpyModule } from '@thisissoon/angular-scrollspy';
+// import { ScrollSpyDirective } from './scroll-spy.directive';
 
 @NgModule({
   declarations: [
@@ -26,8 +30,9 @@ import { ResumeComponent } from './resume/resume.component';
     TopBarNavComponent,
     BottomBarNavComponent,
     AboutMeComponent,
-    ResumeComponent
-
+    ResumeComponent,
+    ScrollSpyDirective
+    // ScrollSpyDirective
   ],
   imports: [
     BrowserModule,
@@ -41,7 +46,9 @@ import { ResumeComponent } from './resume/resume.component';
       { path: 'blog', component: ContentComponent }
     ]),
     BrowserAnimationsModule,
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    InViewportModule, 
+    ScrollSpyModule.forRoot()
     // NgxPageScrollCoreModule
   ],
   providers: [],

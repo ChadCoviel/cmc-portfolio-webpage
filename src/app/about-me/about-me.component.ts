@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { tech } from '../tech';
 
 @Component({
@@ -8,9 +8,21 @@ import { tech } from '../tech';
 })
 export class AboutMeComponent implements OnInit {
   tech=tech;
+  currentSection = '';
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onSectionChange(sectionId: string) {
+    this.currentSection = sectionId;
+    console.log('Section ID is: ');
+    console.log(sectionId);
+  }
+
+  scrollTo(section) {
+    document.querySelector('#' + section)
+    .scrollIntoView();
+  }
 }

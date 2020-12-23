@@ -6,13 +6,13 @@ export const about_me_content = [
     required: true
   },
   {
-    name: 'Languages and Technologies and other stuff',
-    description: 'personal and professional goals',
+    name: 'Languages and Technologies',
+    description: 'Languages and Technologies I know',
     id: 'tech-content',
     required: true
   },
   {
-    name: 'Why',
+    name: 'Why Programming?',
     description: 'Why I chose software engineering',
     id: 'why-content',
     required: true

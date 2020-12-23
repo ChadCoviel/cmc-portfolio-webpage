@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { about_me_content } from '../about-me-content';
 
 @Component({
@@ -8,6 +8,7 @@ import { about_me_content } from '../about-me-content';
 })
 export class SideBarNavComponent implements OnInit {
   about_me_content=about_me_content;
+  @Input() currentSection: string;
 
   constructor() { }
 

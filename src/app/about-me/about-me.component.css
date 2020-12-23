@@ -1,32 +1,18 @@
-p {
-  /*text-indent: 50px;*/
-}
 ul{
   list-style: none;
 }
+
 li{
   display: inline;
-  /*padding-top: 0;*/
 }
 
 h1 {
 	text-align: center;
 }
-/*div {
-	white-space:normal;
-	}*/
 
-#middlecontent {
-	/*display: flex;
-	flex-direction: column;
-	flex-wrap: wrap-reverse;*/
-	/*overflow-y: scroll;*/
-	/*height: 90%;
-	position: absolute;*/
-}
 #side-bar {
-/*	float: left;*/
 	background-color:lightgray;
+	padding: 0;
 }
 
 #about-me-content {
@@ -39,7 +25,24 @@ h1 {
 	text-align: center;
 }
 
-.card {display:inline-block;}
+#myPic {
+	text-align: center;
+	padding: 15vh;
+}
+
+#last-paragraph {
+	padding-bottom: 70vh;
+}
+
+#tech-content {
+	color:black;
+	font-size:60px;
+}
+
+.card {
+	display:inline-block;
+	width: 12rem;
+}
 
 .tech-card-text {
 	color:black;
@@ -47,4 +50,16 @@ h1 {
 	text-align:center;
 }
 
-/** { border: 1px solid black; }*/
+.myAnchor {
+	display: block; 
+	position: relative; 
+}
+
+.my-content-text {
+	color:black;
+	font-size:24px;
+}
+
+.content-pics {
+	width:60vh;
+}

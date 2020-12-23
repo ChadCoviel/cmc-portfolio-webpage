@@ -1,17 +1,22 @@
 #side-nav {
 	position: relative;
-	width: inherit;
 }
 
 a {
-	
 	word-wrap: break-word;
-
+	cursor: pointer;
+	color: white;
 }
 
 .fixed-div {
 	position:fixed;
+	max-width: 24vh;
 }
+
+.current-section {
+  background-color: #3B5195;
+}
+
 
 /** { border: 1px solid black; }*/
 /** { clear: both; }*/
