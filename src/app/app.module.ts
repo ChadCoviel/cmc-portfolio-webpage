@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 // import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
-import { NgxPageScrollModule } from 'ngx-page-scroll';
+// import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,9 +16,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ResumeComponent } from './resume/resume.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
-import { InViewportModule } from '@thisissoon/angular-inviewport';
-import { ScrollSpyModule } from '@thisissoon/angular-scrollspy';
-// import { ScrollSpyDirective } from './scroll-spy.directive';
+// import { InViewportModule } from '@thisissoon/angular-inviewport';
+// import { ScrollSpyModule } from '@thisissoon/angular-scrollspy';
 
 @NgModule({
   declarations: [
@@ -45,10 +44,10 @@ import { ScrollSpyModule } from '@thisissoon/angular-scrollspy';
       { path: 'slogo', component: JavaAppComponent },
       { path: 'blog', component: ContentComponent }
     ]),
-    BrowserAnimationsModule,
-    NgxPageScrollModule,
-    InViewportModule, 
-    ScrollSpyModule.forRoot()
+    BrowserAnimationsModule
+    // NgxPageScrollModule,
+    // InViewportModule, 
+    // ScrollSpyModule.forRoot()
     // NgxPageScrollCoreModule
   ],
   providers: [],
