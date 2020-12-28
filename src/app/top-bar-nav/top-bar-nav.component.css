@@ -6,7 +6,7 @@ background-color:rgb(255, 99, 71);
 
 ul{
   list-style: none;
-  top: 5vh;
+  /*top: 5vh;*/
 }
 li{
   display: inline;
@@ -15,5 +15,5 @@ li{
 a {
   /*background-color: gray;	*/
 }
-
-/** { border: 1px solid black; }*/
+/*
+* { border: 1px solid black; }*/
