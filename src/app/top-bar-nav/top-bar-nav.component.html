@@ -1,8 +1,13 @@
-<nav id="top-nav" class="navbar navbar-dark bg-primary navbar-expand-sm">
+<nav id="top-nav" class="navbar navbar-expand navbar-dark bg-primary">
 	<ul id="menu" class="navbar-nav">
-		<li class="nav-item" *ngFor="let section of sections">
-			  <a class="nav-link" [routerLink]="section.path">{{ section.name }}</a>
-		</li>
+		<!-- <li class="nav-item" *ngFor="let section of sections"> -->
+			<li class="nav-item">
+			  <!-- <a class="nav-link" [routerLink]="section.path">{{ section.name }}</a> -->
+			  	<a class="nav-link" [routerLink]="sections[0].path">{{ sections[0].name }}</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="../../assets/files/SoftwareEngineerResume.pdf" target="_blank">{{ sections[1].name }}</a>
+			</li>
 	</ul>
 </nav>
 

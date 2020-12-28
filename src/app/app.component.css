@@ -21,6 +21,7 @@
 #middle {
 	top:5vh;
 	position:relative;
+/*	overflow: scroll;*/
 }
 #bottomnav {
   position: fixed; /* Set the navbar to fixed position */
